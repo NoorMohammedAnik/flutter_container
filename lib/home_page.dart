@@ -17,7 +17,7 @@ class HomePage extends StatelessWidget {
         decoration: BoxDecoration(
           //shape: BoxShape.circle,
           shape: BoxShape.rectangle,
-          color: Colors.blue,
+          color: Colors.blue, // we can not use color both container and BoxDecoration
           borderRadius: BorderRadius.circular(20),//when we use BoxShape.circle, we can not use it
 
         ),
