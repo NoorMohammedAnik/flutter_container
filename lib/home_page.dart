@@ -16,12 +16,21 @@ class HomePage extends StatelessWidget {
         margin: EdgeInsets.all(20),
         decoration: BoxDecoration(
           //shape: BoxShape.circle,
-          shape: BoxShape.rectangle,
+          shape: BoxShape.circle,
           color: Colors.blue, // we can not use color both container and BoxDecoration
-          borderRadius: BorderRadius.circular(20),//when we use BoxShape.circle, we can not use it
+          //borderRadius: BorderRadius.circular(20),//when we use BoxShape.circle, we can not use it
 
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.5), // Shadow color
+              blurRadius: 5, // Soften the shadow
+              spreadRadius: 2, // Extend the shadow
+
+            ),
+          ],
         ),
-        child: Text("Hello! I am in the container widget decoration box!!"),
+
+        // child: Text("Hello! I am in the container widget decoration box!!"),
 
       ),
     );
